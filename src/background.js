@@ -6,9 +6,7 @@ var defaultKeyMaps = [
 
 if(localStorage.getItem('initiated') !== 'yes'){
   localStorage.initiated = 'yes';
-  defaultKeyMaps.map(function(obj,i){
-    localStorage[obj.key] = JSON.stringify(obj.url);
-  });
+  localStorage.data = JSON.stringify(defaultKeyMaps);
 }
 
 chrome.runtime.onMessage.addListener(
@@ -17,8 +15,10 @@ chrome.runtime.onMessage.addListener(
       sendResponse({data: localStorage});
     } else {
       var key = (request.getKeyCode).toLowerCase();
-      var keyMap = localStorage.getItem(key);
-      if(keyMap !== null)
-        sendResponse({url:JSON.parse(keyMap)});
+      var keyMap = JSON.parse(localStorage.getItem('data'));
+      keyMap.map(function(obj,i){
+        if(obj.key === key)
+          sendResponse({url: obj.url});
+      });
     }
   });
