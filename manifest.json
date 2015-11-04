@@ -1,14 +1,14 @@
 {
-  "name": "Crazy shortcuts",
+  "name": "Shift +",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "This extension helps you to shop in twitter directly, by adding a buy button near a tweet.",
+  "description": "Add your custom shortcuts to open a webpage from any webpage. Just press Shift + shortcut to open the webpage.",
   "homepage_url": "http://praneshravi.in",
   "default_locale": "en",
   "icons": {
-    "16": "src/img/icon128.png",
-    "48": "src/img/icon128.png",
-    "128": "src/img/icon128.png"
+    "16": "src/logo.png",
+    "48": "src/logo.png",
+    "128": "src/logo.png"
   },
   "permissions": [
     "clipboardRead",
@@ -25,7 +25,7 @@
   "browser_action": {
     "default_title": "Crazy Shortcuts",
     "default_popup": "src/index.html",
-    "default_icon"   :  "src/img/icon128.png"
+    "default_icon"   :  "src/logo.png"
   },
   "content_scripts": [
     {

@@ -13,6 +13,11 @@ chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if(request.getKeyMaps){
       sendResponse({data: localStorage});
+    } else if(request.addKeyMaps){
+      var newData = request.newData;
+      newData = JSON.stringify(newData);
+      localStorage.data = newData;
+      sendResponse({data: localStorage});
     } else {
       var key = (request.getKeyCode).toLowerCase();
       var keyMap = JSON.parse(localStorage.getItem('data'));

@@ -1,5 +1,75 @@
-body #app {
-  width: 500px;
-  height: 700px; }
-
-/*# sourceMappingURL=main.css.map */
+body {
+  padding: 0;
+  margin: 0; }
+  body input[type='text'] {
+    padding: 10px;
+    border: none;
+    width: 300px;
+    outline: none;
+    background: #F1F1F1;
+    border-radius: 4px; }
+    body input[type='text']:focus {
+      border-bottom: 1px solid #333; }
+  body select {
+    padding: 7px 16px;
+    margin-left: 20px;
+    border: none;
+    -webkit-appearance: none;
+    background: #F1F1F1;
+    font-weight: 600;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer; }
+    body select:focus {
+      border-bottom: 1px solid #333; }
+  body button {
+    border: none;
+    background: #43A047;
+    color: #FFF;
+    padding: 10px 25px;
+    border-radius: 4px;
+    float: right;
+    margin-right: 20px; }
+  body #app {
+    width: 500px;
+    height: 500px; }
+    body #app .row-1 .logo {
+      text-align: center; }
+      body #app .row-1 .logo img {
+        width: 80px; }
+    body #app .row-2 {
+      background: #424242;
+      padding: 20px;
+      margin: 20px 0px 0px;
+      color: #fff;
+      position: fixed;
+      width: 100%;
+      box-sizing: border-box;
+      bottom: 0;
+      height: 320px;
+      overflow: auto; }
+      body #app .row-2.null {
+        text-align: center; }
+        body #app .row-2.null p {
+          width: 100%; }
+      body #app .row-2 .key-detail {
+        margin: 30px 0px; }
+        body #app .row-2 .key-detail:first-child {
+          margin-top: 0px; }
+        body #app .row-2 .key-detail:last-child {
+          margin-bottom: 0px; }
+        body #app .row-2 .key-detail .key {
+          display: inline-block;
+          margin-right: 60px;
+          font-size: 18px;
+          text-align: center;
+          font-weight: 600; }
+        body #app .row-2 .key-detail .url {
+          display: inline-block; }
+        body #app .row-2 .key-detail .close {
+          display: inline-block;
+          float: right;
+          cursor: pointer;
+          font-size: 16px; }
+          body #app .row-2 .key-detail .close:hover {
+            color: #F44336; }
