@@ -1,6 +1,6 @@
 {
   "name": "Shift +",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "manifest_version": 2,
   "description": "Add your custom shortcuts to open a webpage from any webpage. Just press Shift + shortcut to open the webpage.",
   "homepage_url": "http://praneshravi.in",
